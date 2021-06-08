@@ -4,33 +4,40 @@
   <img src="https://i.imgur.com/gqK7LhX.png" alt="GSP342 —— Ensure Access & Identity in Google Cloud: Challenge Lab">
 </div>
 
-- [GSP342 —— Ensure Access & Identity in Google Cloud: Challenge Lab](#gsp342--ensure-access--identity-in-google-cloud-challenge-lab)
-  - [Overview](#overview)
-  - [Challenge Scenario](#challenge-scenario)
-  - [Your Challenge](#your-challenge)
-  - [Task 1: Create a custom security role](#task-1-create-a-custom-security-role)
-    - [Description](#description)
-    - [Solution (Command Line Interface)](#solution-command-line-interface)
-    - [References](#references)
-  - [Task 2: Create a service account](#task-2-create-a-service-account)
-    - [Description](#description-1)
-    - [Solution (Graphical User Interface)](#solution-graphical-user-interface)
-    - [Solution (Command Line Interface)](#solution-command-line-interface-1)
-    - [References](#references-1)
-  - [Task 3: Bind a custom security role to a service account](#task-3-bind-a-custom-security-role-to-a-service-account)
-    - [Description](#description-2)
-    - [Solution (Graphical User Interface)](#solution-graphical-user-interface-1)
-    - [Solution (Command Line Interface)](#solution-command-line-interface-2)
-    - [References](#references-2)
-  - [Task 4: Create and configure a new Kubernetes Engine private cluster](#task-4-create-and-configure-a-new-kubernetes-engine-private-cluster)
-    - [Description](#description-3)
-    - [Solution (Graphical User Interface)](#solution-graphical-user-interface-2)
-    - [Solution (Command Line Interface)](#solution-command-line-interface-3)
-    - [Reference](#reference)
-  - [Task 5: Deploy an application to a private Kubernetes Engine cluster.](#task-5-deploy-an-application-to-a-private-kubernetes-engine-cluster)
-    - [Description](#description-4)
-    - [Solution (Command Line Interface)](#solution-command-line-interface-4)
-    - [References](#references-3)
+<details>
+  <summary>
+    <strong>Table of Contents</strong>
+    <small><em>（🔎 Click to expand／collapse）</em></small>
+  </summary>
+
+- [Overview](#overview)
+- [Challenge Scenario](#challenge-scenario)
+- [Your Challenge](#your-challenge)
+- [Task 1: Create a custom security role](#task-1-create-a-custom-security-role)
+  - [Description](#description)
+  - [Solution (Command Line Interface)](#solution-command-line-interface)
+  - [References](#references)
+- [Task 2: Create a service account](#task-2-create-a-service-account)
+  - [Description](#description-1)
+  - [Solution (Graphical User Interface)](#solution-graphical-user-interface)
+  - [Solution (Command Line Interface)](#solution-command-line-interface-1)
+  - [References](#references-1)
+- [Task 3: Bind a custom security role to a service account](#task-3-bind-a-custom-security-role-to-a-service-account)
+  - [Description](#description-2)
+  - [Solution (Graphical User Interface)](#solution-graphical-user-interface-1)
+  - [Solution (Command Line Interface)](#solution-command-line-interface-2)
+  - [References](#references-2)
+- [Task 4: Create and configure a new Kubernetes Engine private cluster](#task-4-create-and-configure-a-new-kubernetes-engine-private-cluster)
+  - [Description](#description-3)
+  - [Solution (Graphical User Interface)](#solution-graphical-user-interface-2)
+  - [Solution (Command Line Interface)](#solution-command-line-interface-3)
+  - [Reference](#reference)
+- [Task 5: Deploy an application to a private Kubernetes Engine cluster.](#task-5-deploy-an-application-to-a-private-kubernetes-engine-cluster)
+  - [Description](#description-4)
+  - [Solution (Command Line Interface)](#solution-command-line-interface-4)
+  - [References](#references-3)
+
+</details>
 
 ## Overview
 
