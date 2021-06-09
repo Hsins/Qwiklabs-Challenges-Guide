@@ -6,8 +6,10 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [Ovewview](#ovewview)
+- [Overview](#overview)
 - [Install the Monitoring and Logging Agents](#install-the-monitoring-and-logging-agents)
+  - [Command Line Interface](#command-line-interface)
+  - [Graphical User Interface](#graphical-user-interface)
 - [Create Monitoring workspaces](#create-monitoring-workspaces)
 - [Create Uptime Check](#create-uptime-check)
 - [Create Alearting Policy](#create-alearting-policy)
@@ -18,11 +20,16 @@
 
 </details>
 
-## Ovewview
+## Overview
 
 Cloud Monitoring provides visibility into the performance, uptime, and overall health of cloud-powered applications. Cloud Monitoring collects metrics, events, and metadata from Google Cloud, Amazon Web Services, hosted uptime probes, application instrumentation, and a variety of common application components including Cassandra, Nginx, Apache Web Server, Elasticsearch, and many others. Cloud Monitoring ingests that data and generates insights via dashboards, charts, and alerts. Cloud Monitoring alerting helps you collaborate by integrating with Slack, PagerDuty, HipChat, Campfire, and more.
 
 ## Install the Monitoring and Logging Agents
+
+- The **Cloud Monitoring agent** is a collectd-based daemon that gathers system and application metrics (e.g. disk, CPU, network and process metrics) from virtual machine instances and sends them to Monitoring.
+- The **Cloud Logging agent** sent or stream info to Cloud Monitoring in the Cloud Console.
+
+### Command Line Interface
 
 Install the Cloud Monitoring agent and Cloud Logging agent in the VMs with following commands:
 
@@ -38,8 +45,15 @@ $ sudo bash add-logging-agent-repo.sh
 $ sudo apt-get update && sudo apt-get install google-fluentd
 ```
 
-- The **Cloud Monitoring agent** is a collectd-based daemon that gathers system and application metrics (e.g. disk, CPU, network and process metrics) from virtual machine instances and sends them to Monitoring.
-- The **Cloud Logging agent** sent or stream info to Cloud Monitoring in the Cloud Console.
+### Graphical User Interface
+
+To install the agents on the VM:
+
+1. From the **Navigation Menu** go to **Monitoring**.
+2. In the Monitoring Overview window, click **VIEW GCE DASHBOARD**.
+3. Click on the **VMs Dashboard** link under **Compute Engine**. You will see your VMs listed.
+4. Under the **Monitoring Agent Status** (or **Logging Agent Status**) for VMs, click **Install Agent**. This will bring up an **Agent Details** window on the right side, which is used to install the agent.
+5. In the **Agent Details** window, ensure the operating system and click **Install Agent**.
 
 ## Create Monitoring workspaces
 

@@ -1,7 +1,7 @@
-# GSP342 —— Ensure Access & Identity in Google Cloud: Challenge Lab
+# GSP342 —— Ensure Access & Identity in Google Cloud
 
 <div align="center">
-  <img src="https://i.imgur.com/gqK7LhX.png" alt="GSP342 —— Ensure Access & Identity in Google Cloud: Challenge Lab">
+  <img src="https://i.imgur.com/gqK7LhX.png" alt="GSP342 —— Ensure Access & Identity in Google Cloud">
 </div>
 
 <details>

@@ -1,4 +1,4 @@
-# GSP313 —— Create and Manage Cloud Resources
+# GSP315 —— Perform Foundational Infrastructure Tasks in Google Cloud
 
 <div align="center">
   <img src="https://i.imgur.com/F3iwIvo.png" alt="GSP313 —— Create and Manage Cloud Resources">
@@ -10,21 +10,22 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [Overview](#overview)
-- [Challenge Scenario](#challenge-scenario)
-- [Task 1: Create a project jumphost instance](#task-1-create-a-project-jumphost-instance)
-  - [Description](#description)
-  - [Solution (Google Cloud Console)](#solution-google-cloud-console)
-  - [Solution (Command Line Interface)](#solution-command-line-interface)
-  - [References](#references)
-- [Task 2: Create a Kubernetes service cluster](#task-2-create-a-kubernetes-service-cluster)
-  - [Description](#description-1)
-  - [Solution (Command Line Interface)](#solution-command-line-interface-1)
-  - [References](#references-1)
-- [Task 3: Set up an HTTP load balancer](#task-3-set-up-an-http-load-balancer)
-  - [Description](#description-2)
-  - [Solution (Command Line Interface)](#solution-command-line-interface-2)
-  - [References](#references-2)
+- [GSP315 —— Perform Foundational Infrastructure Tasks in Google Cloud](#gsp315--perform-foundational-infrastructure-tasks-in-google-cloud)
+  - [Overview](#overview)
+  - [Challenge Scenario](#challenge-scenario)
+  - [Task 1: Create a project jumphost instance](#task-1-create-a-project-jumphost-instance)
+    - [Description](#description)
+    - [Solution (Google Cloud Console)](#solution-google-cloud-console)
+    - [Solution (Command Line Interface)](#solution-command-line-interface)
+    - [References](#references)
+  - [Task 2: Create a Kubernetes service cluster](#task-2-create-a-kubernetes-service-cluster)
+    - [Description](#description-1)
+    - [Solution (Command Line Interface)](#solution-command-line-interface-1)
+    - [References](#references-1)
+  - [Task 3: Set up an HTTP load balancer](#task-3-set-up-an-http-load-balancer)
+    - [Description](#description-2)
+    - [Solution (Command Line Interface)](#solution-command-line-interface-2)
+    - [References](#references-2)
 
 </details>
 
@@ -36,19 +37,22 @@
 
 | Level | Code | Name | Note |
 | :--: | :--: | :-- | :--: |
-| Introductory | `GSP282` | [A Tour of Qwiklabs and Google Cloud](https://google.qwiklabs.com/focuses/2794?parent=catalog) |  |
-| Introductory | `GSP001` | [Creating a Virtual Machine](https://google.qwiklabs.com/focuses/3563?parent=catalog) |  |
-| Introductory | `GSP093` | [Compute Engine: Qwik Start - Windows](https://google.qwiklabs.com/focuses/560?parent=catalog) |  |
-| Introductory | `GSP002` | [Getting Started with Cloud Shell and gcloud](https://google.qwiklabs.com/focuses/563?parent=catalog) |  |
-| Introductory | `GSP100` | [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) |  |
-| Fundamental | `GSP007` | [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/12007?parent=catalog) |  |
-| Fundamental | `GSP313` | [Create and Manage Cloud Resources: Challenge Lab](https://google.qwiklabs.com/focuses/10258?parent=catalog) |  |
+| Introductory | `GSP073` | [Cloud Storage: Qwik Start - Cloud Console](https://google.qwiklabs.com/focuses/1760?parent=catalog) |  |
+| Introductory | `GSP074` | [Cloud Storage: Qwik Start - CLI/SDK](https://google.qwiklabs.com/focuses/569?parent=catalog) |  |
+| Introductory | `GSP064` | [Cloud IAM: Qwik Start](https://google.qwiklabs.com/focuses/551?parent=catalog) | [EN](../../normal-labs/GSP064_Cloud-IAM-Qwik-Start/) |
+| Introductory | `GSP089` | [Cloud Monitoring: Qwik Start](https://google.qwiklabs.com/focuses/10599?parent=catalog) | [EN](../../normal-labs/GSP089_Cloud-Monitoring-Qwik-Start/) |
+| Introductory | `GSP081` | [Cloud Functions: Qwik Start - Console](https://google.qwiklabs.com/focuses/1763?parent=catalog) |  |
+| Introductory | `GSP080` | [Cloud Functions: Qwik Start - Command Line](https://google.qwiklabs.com/focuses/916?parent=catalog) |  |
+| Introductory | `GSP096` | [Google Cloud Pub/Sub: Qwik Start - Console](https://google.qwiklabs.com/focuses/3719?parent=catalog) |  |
+| Introductory | `GSP095` | [Google Cloud Pub/Sub: Qwik Start - Command Line](https://google.qwiklabs.com/focuses/925?parent=catalog) |  |
+| Introductory | `GSP094` | [Google Cloud Pub/Sub: Qwik Start - Python](https://google.qwiklabs.com/focuses/2775?parent=catalog) |  |
+| Fundamental | `GSP315` | [Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://google.qwiklabs.com/focuses/10379?parent=catalog) |  |
 
 </details>
 
 ## Overview
 
-This lab is recommended for students who have enrolled in the labs in the [Create and Manage Cloud Resources](https://google.qwiklabs.com/quests/120) quest. Be sure to review those labs before starting this lab.
+This lab is recommended for students who have enrolled in the Foundational Infrastructure Tasks in Google Cloud quest.
 
 Topics tested:
 
