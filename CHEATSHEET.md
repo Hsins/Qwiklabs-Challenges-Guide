@@ -1,5 +1,10 @@
 # Google Cloud Platform (GCP) Cheatsheet
 
+- [Google Cloud Platform (GCP) Cheatsheet](#google-cloud-platform-gcp-cheatsheet)
+  - [Regions and Zones](#regions-and-zones)
+  - [Storages and Buckets](#storages-and-buckets)
+  - [References](#references)
+
 ## Regions and Zones
 
 ```bash
@@ -14,14 +19,16 @@ $ gcloud compute zones list
 $ gsutil ls
 
 # upload file
-$ gsutil cp <FILENAME> gs://<bucket-name>/<directory>/
+$ gsutil cp <FILE_NAME> gs://<BUCKET_NAME>/<DIR_PATH>/
 
 # delete file
-$ gsutil rm gs://<bucket-name>/<filepath>
+$ gsutil rm gs://<BUCKET_NAME>/<FILE_PATH>
 
 # download file
-$ gsutil cp gs://<bucket-name>/<dir-path>/package-1.1.tgz .
+$ gsutil cp gs://<BUCKET_NAME>/<FILE_PATH> .
 
 # move file
-$ gsutil mv <src-filepath> gs://<bucket-name>/<directory>/<dest-filepath>
+$ gsutil mv <SRC_FILE_PATH> gs://<BUCKET_NAME>/<DEST_FILE_PATH>
 ```
+
+## References
