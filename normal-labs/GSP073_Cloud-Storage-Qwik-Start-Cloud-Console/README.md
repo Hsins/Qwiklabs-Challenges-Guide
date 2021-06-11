@@ -6,12 +6,11 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [GSP073 —— Cloud Storage: Qwik Start - Cloud Console](#gsp073--cloud-storage-qwik-start---cloud-console)
-  - [Overview](#overview)
-  - [Create Buckets](#create-buckets)
-  - [Upload Objects into Bucket](#upload-objects-into-bucket)
-  - [Share Objects Publicly](#share-objects-publicly)
-  - [References](#references)
+- [Overview](#overview)
+- [Create Buckets](#create-buckets)
+- [Upload Objects into Bucket](#upload-objects-into-bucket)
+- [Share Objects Publicly](#share-objects-publicly)
+- [References](#references)
 
 </details>
 

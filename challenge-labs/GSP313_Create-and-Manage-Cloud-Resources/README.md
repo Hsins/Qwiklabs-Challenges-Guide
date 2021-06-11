@@ -37,8 +37,8 @@
 | Level | Code | Name | Note |
 | :--: | :--: | :-- | :--: |
 | Introductory | `GSP282` | [A Tour of Qwiklabs and Google Cloud](https://google.qwiklabs.com/focuses/2794?parent=catalog) |  |
-| Introductory | `GSP001` | [Creating a Virtual Machine](https://google.qwiklabs.com/focuses/3563?parent=catalog) |  |
-| Introductory | `GSP093` | [Compute Engine: Qwik Start - Windows](https://google.qwiklabs.com/focuses/560?parent=catalog) |  |
+| Introductory | `GSP001` | [Creating a Virtual Machine](https://google.qwiklabs.com/focuses/3563?parent=catalog) | [EN](../../normal-labs/GSP001_Creating-a-Virtual-Machine/) |
+| Introductory | `GSP093` | [Compute Engine: Qwik Start - Windows](https://google.qwiklabs.com/focuses/560?parent=catalog) | [EN](../../normal-labs/GSP093_Compute-Engine-Qwik-Start-Windows/) |
 | Introductory | `GSP002` | [Getting Started with Cloud Shell and gcloud](https://google.qwiklabs.com/focuses/563?parent=catalog) |  |
 | Introductory | `GSP100` | [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) |  |
 | Fundamental | `GSP007` | [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/12007?parent=catalog) |  |
@@ -82,7 +82,14 @@ You will use this instance to perform maintenance for the project.
 
 ### Solution (Google Cloud Console)
 
-1. **Navigation Menu** > **Compute Engine** > **VM Instance**
+1. Click **Navigation Menu** > **Compute Engine** > **VM Instance**.
+2. Click **CREATE INSTANCE**.
+3. Configure the instance parameters.
+   - **Name**: `nucleus-jumphost`
+   - **Zone**: `us-east1-b`
+   - **Machine Type**: `f1-micro`
+   - **Image Type**: `debian-10`
+4. Click **CREATE**
 
 ### Solution (Command Line Interface)
 

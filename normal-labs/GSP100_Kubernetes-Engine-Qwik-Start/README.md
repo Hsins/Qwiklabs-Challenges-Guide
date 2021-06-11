@@ -1,4 +1,4 @@
-# GSP282 —— A Tour of Qwiklabs and Google Cloud
+# GSP100 —— Kubernetes Engine: Qwik Start
 
 <details>
   <summary>
@@ -6,7 +6,7 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [GSP282 —— A Tour of Qwiklabs and Google Cloud](#gsp282--a-tour-of-qwiklabs-and-google-cloud)
+- [GSP100 —— Kubernetes Engine: Qwik Start](#gsp100--kubernetes-engine-qwik-start)
   - [Overview](#overview)
   - [References](#references)
 

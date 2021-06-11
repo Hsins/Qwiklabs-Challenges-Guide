@@ -1,4 +1,4 @@
-# GSP282 —— A Tour of Qwiklabs and Google Cloud
+# GSP002 —— Getting Started with Cloud Shell and `gcloud`
 
 <details>
   <summary>
@@ -6,7 +6,7 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [GSP282 —— A Tour of Qwiklabs and Google Cloud](#gsp282--a-tour-of-qwiklabs-and-google-cloud)
+- [GSP002 —— Getting Started with Cloud Shell and `gcloud`](#gsp002--getting-started-with-cloud-shell-and-gcloud)
   - [Overview](#overview)
   - [References](#references)
 

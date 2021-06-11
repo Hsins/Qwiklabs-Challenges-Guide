@@ -1,4 +1,4 @@
-# GSP282 —— A Tour of Qwiklabs and Google Cloud
+# GSP007 —— Set Up Network and HTTP Load Balancers
 
 <details>
   <summary>
@@ -6,7 +6,7 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [GSP282 —— A Tour of Qwiklabs and Google Cloud](#gsp282--a-tour-of-qwiklabs-and-google-cloud)
+- [GSP007 —— Set Up Network and HTTP Load Balancers](#gsp007--set-up-network-and-http-load-balancers)
   - [Overview](#overview)
   - [References](#references)
 
