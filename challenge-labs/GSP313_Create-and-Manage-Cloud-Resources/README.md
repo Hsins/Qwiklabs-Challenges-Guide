@@ -39,9 +39,9 @@
 | Introductory | `GSP282` | [A Tour of Qwiklabs and Google Cloud](https://google.qwiklabs.com/focuses/2794?parent=catalog) |  |
 | Introductory | `GSP001` | [Creating a Virtual Machine](https://google.qwiklabs.com/focuses/3563?parent=catalog) | [EN](../../normal-labs/GSP001_Creating-a-Virtual-Machine/) |
 | Introductory | `GSP093` | [Compute Engine: Qwik Start - Windows](https://google.qwiklabs.com/focuses/560?parent=catalog) | [EN](../../normal-labs/GSP093_Compute-Engine-Qwik-Start-Windows/) |
-| Introductory | `GSP002` | [Getting Started with Cloud Shell and gcloud](https://google.qwiklabs.com/focuses/563?parent=catalog) |  |
-| Introductory | `GSP100` | [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) |  |
-| Fundamental | `GSP007` | [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/12007?parent=catalog) |  |
+| Introductory | `GSP002` | [Getting Started with Cloud Shell and gcloud](https://google.qwiklabs.com/focuses/563?parent=catalog) | [EN](../../normal-labs/GSP002_Getting-Started-with-Cloud-Shell-and-gcloud/) |
+| Introductory | `GSP100` | [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) | [EN](../../normal-labs/GSP100_Kubernetes-Engine-Qwik-Start/) |
+| Fundamental | `GSP007` | [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/12007?parent=catalog) | [EN](../../normal-labs/GSP007_Set-Up-Network-and-HTTP-Load-Balancers/) |
 | Fundamental | `GSP313` | [Create and Manage Cloud Resources: Challenge Lab](https://google.qwiklabs.com/focuses/10258?parent=catalog) |  |
 
 </details>

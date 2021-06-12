@@ -24,6 +24,21 @@
 
 </details>
 
+<details>
+  <summary>
+    <strong>Quest Outline</strong>
+    <small><em>（🔎 Click to expand／collapse）</em></small>
+  </summary>
+
+| Level | Code | Name | Note |
+| :--: | :--: | :-- | :--: |
+| | VIDEO | [Hosting a static web app on Google Cloud using GCS](https://www.youtube.com/watch?v=HkJxy22P5gk) |  |
+| Fundamental | `GSP659` | [Deploy Your Website on Cloud Run](https://google.qwiklabs.com/focuses/10445?parent=catalog) |  |
+| | VIDEO | [Hosting a web app on Google Cloud using GCE](https://www.youtube.com/watch?v=nnXi0ABwSXA) |  |
+
+
+</details>
+
 ## Overview
 
 This lab is recommended for students who have enrolled in the [Build a Website on Google Cloud](https://google.qwiklabs.com/quests/115) quest.

@@ -35,7 +35,7 @@
 | Advanced | [Set Up and Configure a Cloud Environment in Google Cloud](https://google.qwiklabs.com/quests/119) | [`GSP321`](https://www.qwiklabs.com/focuses/10603?parent=catalog) |  |  |
 | Advanced | [Build and Secure Networks in Google Cloud](https://www.qwiklabs.com/quests/128) | [`GSP322`](https://google.qwiklabs.com/focuses/12068?parent=catalog) |  |  |
 | Introductory | [Perform Foundational Data, ML, and AI Tasks in Google Cloud](https://www.qwiklabs.com/quests/117) | [`GSP323`](https://google.qwiklabs.com/focuses/11044?parent=catalog) |  |  |
-| Fundamental | [Explore Machine Learning Models with Explainable AI](https://www.qwiklabs.com/quests/126) | [`GSP324`](https://google.qwiklabs.com/focuses/12011?parent=catalog) |  |  |
+| Fundamental | [Explore Machine Learning Models with Explainable AI](https://www.qwiklabs.com/quests/126) | [`GSP324`](https://google.qwiklabs.com/focuses/12011?parent=catalog) | [EN](./challenge-labs/GSP324_Explore-Machine-Learning-Models-with-Explainable-AI/) |  |
 | Fundamental | [Build Interactive Apps with Google Assistant](https://www.qwiklabs.com/quests/122) | [`GSP325`](https://google.qwiklabs.com/focuses/11881?parent=catalog) |  |  |
 | Advanced | [Engineer Data in Google Cloud](https://google.qwiklabs.com/quests/132) | [`GSP327`](https://www.qwiklabs.com/focuses/12379?parent=catalog) |  |  |
 | Advanced | [Serverless Cloud Run Development](https://www.qwiklabs.com/quests/152) | [`GSP328`](https://google.qwiklabs.com/focuses/14744?parent=catalog) |  |  |
@@ -57,14 +57,15 @@
 | Level | Code | Lab Name | Note |
 | :--: | :--: | :-- | :--: |
 | Introductory | `GSP001` | [Creating a Virtual Machine](https://google.qwiklabs.com/focuses/3563?parent=catalog) | [EN](../../normal-labs/GSP001_Creating-a-Virtual-Machine/) |
-| Introductory | `GSP002` | [Getting Started with Cloud Shell and gcloud](https://google.qwiklabs.com/focuses/563?parent=catalog) |  |
-| Fundamental | `GSP007` | [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/12007?parent=catalog) |  |
+| Introductory | `GSP002` | [Getting Started with Cloud Shell and gcloud](https://google.qwiklabs.com/focuses/563?parent=catalog) | [EN](../../WorkSpace/Qwiklabs-Challenges-Guide/normal-labs/GSP002_Getting-Started-with-Cloud-Shell-and-gcloud/) |
+| Fundamental | `GSP007` | [Set Up Network and HTTP Load Balancers](https://google.qwiklabs.com/focuses/12007?parent=catalog) | [EN](./normal-labs/GSP007_Set-Up-Network-and-HTTP-Load-Balancers/) |
 | Introductory | `GSP055` | [Introduction to Docker](https://google.qwiklabs.com/focuses/1029?parent=catalog) | [EN](./normal-labs/GSP055_Introduction-to-Docker/) |
 | Introductory | `GSP064` | [Cloud IAM: Qwik Start](https://google.qwiklabs.com/focuses/551?parent=catalog) | [EN](./normal-labs/GSP064_Cloud-IAM-Qwik-Start/) |
 | Introductory | `GSP071` | [BigQuery: Qwik Start - Command Line](https://google.qwiklabs.com/focuses/577?parent=catalog) | [EN](./normal-labs/GSP071_BigQuery-Qwik-Start-Command-Line/) |
 | Introductory | `GSP072` | [BigQuery: Qwik Start - Console](https://google.qwiklabs.com/focuses/1145?parent=catalog) | [EN](./normal-labs/GSP072_BigQuery-Qwik-Start-Console/) |
 | Introductory | `GSP073` | [Cloud Storage: Qwik Start - Cloud Console](https://google.qwiklabs.com/focuses/1760?parent=catalog) | [EN](./normal-labs/GSP073_Cloud-Storage-Qwik-Start-Cloud-Console/) |
 | Introductory | `GSP074` | [Cloud Storage: Qwik Start - CLI/SDK](https://google.qwiklabs.com/focuses/569?parent=catalog) | [EN](./normal-labs/GSP074_Cloud-Storage-Qwik-Start-CLI-SDK/) |
+| Introductory | `GSP076` | [AI Platform: Qwik Start](https://www.qwiklabs.com/focuses/581?parent=catalog) | [EN](./normal-labs/GSP076_AI-Platform-Qwik-Start/) |
 | Introductory | `GSP080` | [Cloud Functions: Qwik Start - Command Line](https://google.qwiklabs.com/focuses/916?parent=catalog) | [EN](./normal-labs/GSP080_Cloud-Functions-Qwik-Start-Command-Line/) |
 | Introductory | `GSP081` | [Cloud Functions: Qwik Start - Console](https://google.qwiklabs.com/focuses/1763?parent=catalog) | [EN](./normal-labs/GSP081_Cloud-Functions-Qwik-Start-Console/) |
 | Advanced | `GSP087` | [Autoscaling an Instance Group with Custom Cloud Monitoring Metrics](https://google.qwiklabs.com/focuses/611?parent=catalog) | [EN](./normal-labs/GSP087_Autoscaling-an-Instance-Group-with-Custom-Cloud-Monitoring-Metrics/)|
@@ -76,7 +77,7 @@
 | Introductory | `GSP094` | [Google Cloud Pub/Sub: Qwik Start - Python](https://google.qwiklabs.com/focuses/2775?parent=catalog) | [EN](./Qwiklabs-Challenges-Guide/normal-labs/GSP094_Google-Cloud-Pub-Sub-Qwik-Start-Python/) |
 | Introductory | `GSP095` | [Google Cloud Pub/Sub: Qwik Start - Command Line](https://google.qwiklabs.com/focuses/925?parent=catalog) | [EN](./normal-labs/GSP095_Google-Cloud-Pub-Sub-Qwik-Start-Command-Line/) |
 | Introductory | `GSP096` | [Google Cloud Pub/Sub: Qwik Start - Console](https://google.qwiklabs.com/focuses/3719?parent=catalog) | [EN](./normal-labs/GSP096_Google-Cloud-Pub-Sub-Qwik-Start-Console%20copy%202/) |
-| Introductory | `GSP100` | [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) |  |
+| Introductory | `GSP100` | [Kubernetes Engine: Qwik Start](https://google.qwiklabs.com/focuses/878?parent=catalog) | [EN](./normal-labs/GSP100_Kubernetes-Engine-Qwik-Start/) |
 | Fundamental | `GSP111` | [Reporting Application Metrics into Cloud Monitoring](https://google.qwiklabs.com/focuses/1259?parent=catalog) | [EN](./normal-labs/GSP111_Reporting-Application-Metrics-into-Cloud-Monitoring/) |
 | Introductory | `GSP190` | [IAM Custom Roles](https://google.qwiklabs.com/focuses/1035?parent=catalog) | [EN](./normal-labs/GSP190_IAM-Custom-Roles/) |
 | Introductory | `GSP281` | [Introduction to SQL for BigQuery and Cloud SQL](https://google.qwiklabs.com/focuses/2802?parent=catalog) | [EN](./normal-labs/GSP281_Introduction-to-SQL-for-BigQuery-and-Cloud-SQL/) |
@@ -84,6 +85,9 @@
 | Fundamental | `GSP407` | [Exploring Your Ecommerce Dataset with SQL in Google BigQuery](https://google.qwiklabs.com/focuses/3618?parent=catalog) | [EN](./normal-labs/GSP407_Exploring-Your-Ecommerce-Dataset-with-SQL-in-Google-BigQuery/) |
 | Fundamental | `GSP408` | [Troubleshooting Common SQL Errors with BigQuery](https://google.qwiklabs.com/focuses/3642?parent=catalog) |  |
 | Introductory | `GSP409` | [Explore and Create Reports with Data Studio](https://google.qwiklabs.com/focuses/3614?parent=catalog) |  |
+| Fundamental | `GSP684` | [Compare Cloud AI Platform Models using the What-If Tool to Identify Potential Bias](https://google.qwiklabs.com/focuses/10605?parent=catalog) | [EN](./normal-labs/GSP684_Compare-Cloud-AI-Platform-Models-using-the-What-If-Tool-to-Identify-Potential-Bias/) |
+| Fundamental | `GSP709` | [Identifying Bias in Mortgage Data using Cloud AI Platform and the What-if Tool](https://google.qwiklabs.com/focuses/10903?parent=catalog) | [EN](./normal-labs/GSP709_Identifying-Bias-in-Mortgage-Data-using-Cloud-AI-Platform-and-the-What-if-Tool/) |
+| Fundamental | `GSP710` | [Using the What-If Tool with Image Recognition Models](https://google.qwiklabs.com/focuses/10904?parent=catalog) | [EN](./normal-labs/GSP710_Using-the-What-If-Tool-with-Image-Recognition-Models/) |
 
 ## FAQ
 
