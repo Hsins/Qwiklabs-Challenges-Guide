@@ -10,30 +10,28 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [GSP315 —— Perform Foundational Infrastructure Tasks in Google Cloud](#gsp315--perform-foundational-infrastructure-tasks-in-google-cloud)
-  - [Overview](#overview)
-  - [Challenge Scenario](#challenge-scenario)
-  - [Your challenge](#your-challenge)
-  - [Task 1: Create a bucket](#task-1-create-a-bucket)
-    - [Description](#description)
-    - [Solution (Graphical User Interface)](#solution-graphical-user-interface)
-    - [Solution (Command Line Interface)](#solution-command-line-interface)
-    - [References](#references)
-  - [Task 2: Create a Pub/Sub topic](#task-2-create-a-pubsub-topic)
-    - [Description](#description-1)
-    - [Solution (Graphical User Interface)](#solution-graphical-user-interface-1)
-    - [Solution (Command Line Interface)](#solution-command-line-interface-1)
-    - [References](#references-1)
-  - [Task 3: Create the thumbnail Cloud Function](#task-3-create-the-thumbnail-cloud-function)
-    - [Description](#description-2)
-    - [Solution (Graphical User Interface)](#solution-graphical-user-interface-2)
-    - [Solution (Command Line Interface)](#solution-command-line-interface-2)
-    - [References](#references-2)
-  - [Task 4: Remove the previous cloud engineer](#task-4-remove-the-previous-cloud-engineer)
-    - [Description](#description-3)
-    - [Solution (Graphical User Interface)](#solution-graphical-user-interface-3)
-    - [Solution (Command Line Interface)](#solution-command-line-interface-3)
-    - [References](#references-3)
+- [Overview](#overview)
+- [Challenge Scenario](#challenge-scenario)
+- [Your challenge](#your-challenge)
+- [Task 1: Create a bucket](#task-1-create-a-bucket)
+  - [Description](#description)
+  - [Solution (Graphical User Interface)](#solution-graphical-user-interface)
+  - [Solution (Command Line Interface)](#solution-command-line-interface)
+- [Task 2: Create a Pub/Sub topic](#task-2-create-a-pubsub-topic)
+  - [Description](#description-1)
+  - [Solution (Graphical User Interface)](#solution-graphical-user-interface-1)
+  - [Solution (Command Line Interface)](#solution-command-line-interface-1)
+  - [References](#references)
+- [Task 3: Create the thumbnail Cloud Function](#task-3-create-the-thumbnail-cloud-function)
+  - [Description](#description-2)
+  - [Solution (Graphical User Interface)](#solution-graphical-user-interface-2)
+  - [Solution (Command Line Interface)](#solution-command-line-interface-2)
+  - [References](#references-1)
+- [Task 4: Remove the previous cloud engineer](#task-4-remove-the-previous-cloud-engineer)
+  - [Description](#description-3)
+  - [Solution (Graphical User Interface)](#solution-graphical-user-interface-3)
+  - [Solution (Command Line Interface)](#solution-command-line-interface-3)
+  - [References](#references-2)
 
 </details>
 
@@ -92,9 +90,19 @@ You need to create a bucket for the storage of the photographs.
 
 ### Solution (Graphical User Interface)
 
+1. Click **Navigation Menu** > **Cloud Storage** > **Browser**.
+2. Click **CREATE BUCKET**.
+3. Fill up the fields.
+    - Use the unique bucket name. e.g. `<PROJECT_NAME>`
+    - Region: `us-east1`
+    - Zone: `us-east1-b`
+4. Click **CREATE**.
+
 ### Solution (Command Line Interface)
 
-### References
+```bash
+$ gsutil mb -p <PROJECT_ID> -c "STANDARD" -l "US-EAST1" -b on gs://<BUCKET_NAME>
+```
 
 ## Task 2: Create a Pub/Sub topic
 
@@ -120,8 +128,6 @@ Create a Cloud Function that executes every time an object is created in the buc
 
 ### Solution (Command Line Interface)
 
-### References
-
 ## Task 4: Remove the previous cloud engineer
 
 ### Description
@@ -132,4 +138,3 @@ You will see that there are two users, one is your account (with the role of Own
 
 ### Solution (Command Line Interface)
 
-### References

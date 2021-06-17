@@ -33,8 +33,13 @@
 | Level | Code | Name | Note |
 | :--: | :--: | :-- | :--: |
 | | VIDEO | [Hosting a static web app on Google Cloud using GCS](https://www.youtube.com/watch?v=HkJxy22P5gk) |  |
-| Fundamental | `GSP659` | [Deploy Your Website on Cloud Run](https://google.qwiklabs.com/focuses/10445?parent=catalog) |  |
+| Fundamental | `GSP659` | [Deploy Your Website on Cloud Run](https://google.qwiklabs.com/focuses/10445?parent=catalog) | [EN](../../normal-labs/GSP659_Deploy-Your-Website-on-Cloud-Run/) |
 | | VIDEO | [Hosting a web app on Google Cloud using GCE](https://www.youtube.com/watch?v=nnXi0ABwSXA) |  |
+| Fundamental | `GSP662` | [Hosting a Web App on Google Cloud Using Compute Engine](https://google.qwiklabs.com/focuses/11952?parent=catalog) | [EN](../../normal-labs/GSP662_Hosting-a-Web-App-on-Google-Cloud-Using-Compute-Engine/) |
+| Fundamental | `GSP663` | [Deploy, Scale, and Update Your Website on Google Kubernetes Engine](https://google.qwiklabs.com/focuses/10470?parent=catalog) | [EN](../../normal-labs/GSP663_Deploy-Scale-and-Update-Your-Website-on-Google-Kubernetes-Engine/) |
+| Advanced | `GSP699` | [Migrating a Monolithic Website to Microservices on Google Kubernetes Engine](https://google.qwiklabs.com/focuses/11953?parent=catalog) |  |
+| | VIDEO | [Case Study: Hosting Scalable web apps on Google Cloud](https://www.youtube.com/watch?v=tts41rFP_0k) |  |
+| Advanced | `GSP319` | [Build a Website on Google Cloud: Challenge Lab](https://google.qwiklabs.com/focuses/11765?parent=catalog) |  |
 
 
 </details>

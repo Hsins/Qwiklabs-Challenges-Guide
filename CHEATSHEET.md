@@ -1,6 +1,7 @@
 # Google Cloud Platform (GCP) Cheatsheet
 
 - [Google Cloud Platform (GCP) Cheatsheet](#google-cloud-platform-gcp-cheatsheet)
+  - [Environment Variables](#environment-variables)
   - [Regions and Zones](#regions-and-zones)
   - [COMPUTE](#compute)
     - [Cloud Functions](#cloud-functions)
@@ -12,6 +13,12 @@
   - [BIG DATA](#big-data)
     - [BigQuery](#bigquery)
   - [References](#references)
+
+## Environment Variables
+
+```bash
+$ echo "$DEVSHELL_PROJECT_ID"
+```
 
 ## Regions and Zones
 
