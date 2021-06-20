@@ -10,29 +10,28 @@
     <small><em>（🔎 Click to expand／collapse）</em></small>
   </summary>
 
-- [GSP344 —— Serverless Firebase Development](#gsp344--serverless-firebase-development)
-  - [Overview](#overview)
-  - [Challenge Scenario](#challenge-scenario)
-  - [Provision the Environment](#provision-the-environment)
-  - [Task 1: Create a Firestore database](#task-1-create-a-firestore-database)
-    - [Description](#description)
-    - [Solution](#solution)
-  - [Task 2: Populate the Database](#task-2-populate-the-database)
-    - [Description](#description-1)
-    - [Solution](#solution-1)
-  - [Task 3: Create a REST API](#task-3-create-a-rest-api)
-    - [Description](#description-2)
-    - [Solution](#solution-2)
-  - [Task 4: Firestore API access](#task-4-firestore-api-access)
-    - [Description](#description-3)
-    - [Solution](#solution-3)
-  - [Task 5: Deploy the Staging Frontend](#task-5-deploy-the-staging-frontend)
-    - [Description](#description-4)
-    - [Solution](#solution-4)
-  - [Task 6: Deploy the Production Frontend](#task-6-deploy-the-production-frontend)
-    - [Description](#description-5)
-    - [Solution](#solution-5)
-  - [References](#references)
+- [Overview](#overview)
+- [Challenge Scenario](#challenge-scenario)
+- [Provision the Environment](#provision-the-environment)
+- [Task 1: Create a Firestore database](#task-1-create-a-firestore-database)
+  - [Description](#description)
+  - [Solution](#solution)
+- [Task 2: Populate the Database](#task-2-populate-the-database)
+  - [Description](#description-1)
+  - [Solution](#solution-1)
+- [Task 3: Create a REST API](#task-3-create-a-rest-api)
+  - [Description](#description-2)
+  - [Solution](#solution-2)
+- [Task 4: Firestore API access](#task-4-firestore-api-access)
+  - [Description](#description-3)
+  - [Solution](#solution-3)
+- [Task 5: Deploy the Staging Frontend](#task-5-deploy-the-staging-frontend)
+  - [Description](#description-4)
+  - [Solution](#solution-4)
+- [Task 6: Deploy the Production Frontend](#task-6-deploy-the-production-frontend)
+  - [Description](#description-5)
+  - [Solution](#solution-5)
+- [References](#references)
 
 </details>
 
@@ -121,19 +120,25 @@ To complete this section successfully, you are required to implement the followi
 
 ### Description
 
-In this scenario, populate the database using test data.
-
-A high level architecture diagram below summarizes the general architecture.
+In this scenario, populate the database using test data. A high level architecture diagram below summarizes the general architecture.
 
 <div align="center">
   <img src="https://i.imgur.com/SpDAIAO.png" alt="General Architecture">
 </div>
 
+To complete this section successfully, you are required to implement the following tasks:
+
+- Use the sample code from `pet-theory/lab06/firebase-import-csv/solution`.
+- To import CSV use the node `pet-theory/lab06/firebase-import-csv/solution/index.js`.
+
 ### Solution
 
 ```bash
+# navigate to target folder and install dependencies
 $ cd ~/pet-theory/lab06/firebase-import-csv/solution
 $ npm install
+
+# import csv file
 $ node index.js netflix_titles_original.csv
 ```
 
@@ -141,35 +146,81 @@ $ node index.js netflix_titles_original.csv
 
 ### Description
 
+In this scenario, create an example REST API. A high level architecture diagram below summarizes the general architecture.
+
+<div align="center">
+  <img src="https://i.imgur.com/atXA8AT.png" alt="General Architecture">
+</div>
+
+To complete this section successfully, you are required to implement the following tasks:
+
+- Access `pet-theory/lab06/firebase-rest-api/solution-01`
+- Build and Deploy the code to Google Container Registry
+  - Container Registry Image:	`rest-api:0.1`
+- Deploy the image as a Cloud Run Service
+  - Cloud Run Service: `netflix-dataset-service`
+  - Permission: `--allow-unauthenticated`
+- `curl -X GET $SERVICE_URL` should respond with: `{"status":"Netflix Dataset! Make a query."}`
+
 ### Solution
 
 ```bash
+# navigate to target folder and install dependencies
 $ cd ~/pet-theory/lab06/firebase-rest-api/solution-01
 $ npm install
+
+# build and deploy the code to Google Container Registry (gcr)
 $ gcloud builds submit --tag="gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.1"
+
+# deploy the image as a Cloud Run Service
 $ gcloud run deploy netflix-dataset-service \
     --region="us-central1" \
     --image="gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.1" \
     --allow-unauthenticated
+
+# [Optional] check the resoponse
+$ SERVICE_URL="<SERVICE_URL_OF_REST_API>"
+$ curl -X GET $SERVICE_URL
 ```
 
 ## Task 4: Firestore API access
 
 ### Description
 
+In this scenario, deploy an updated revision of the code to access the Firestore DB. A high level architecture diagram below summarizes the general architecture.
+
+<div align="center">
+  <img src="https://i.imgur.com/FSRW5bG.png" alt="General Architecture">
+</div>
+
+To complete this section successfully, you are required to implement the following tasks:
+
+- Access `pet-theory/lab06/firebase-rest-api/solution-02`.
+- Build the updated application
+- Use Cloud Build to tag and deploy image revision to Container Registry
+  - Container Registry Image:	`rest-api:0.2`
+- Deploy the new image as Cloud Run service
+  - Cloud Run Service: `netflix-dataset-service`
+  - Permission: `--allow-unauthenticated`
+- `curl -X GET $SERVICE_URL/2019` should respond with json dataset
+
 ### Solution
 
 ```bash
+# navigate to target folder and install dependencies
 $ cd ~/pet-theory/lab06/firebase-rest-api/solution-02
 $ npm install
+
+# build and deploy the code to Google Container Registry (gcr)
 $ gcloud builds submit --tag="gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.2"
+
+# deploy the image as a Cloud Run Service
 $ gcloud run deploy netflix-dataset-service \
     --region="us-central1" \
     --image="gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.2" \
     --allow-unauthenticated
 
-# [Optional]
-# go to cloud run and click netflix-dataset-service then copy the url
+# [Optional] check the resoponse
 $ SERVICE_URL="<SERVICE_URL_OF_NETFLIX_DATASET_SERVICE>"
 $ curl -X GET $SERVICE_URL/2019
 ```
@@ -178,14 +229,37 @@ $ curl -X GET $SERVICE_URL/2019
 
 ### Description
 
+In this scenario, deploy the Staging Frontend. A high level architecture diagram below summarizes the general architecture.
+
+<div align="center">
+  <img src="https://i.imgur.com/AOPkIls.png" alt="General Architecture">
+</div>
+
+To complete this section successfully, you are required to implement the following tasks:
+
+- Access `pet-theory/lab06/firebase-frontend`
+- Build the frontend staging application
+- Use Cloud Build to tag and deploy image revision to Container Registry
+  - Container Registry Image:	`frontend-staging:0.1`
+- Deploy the new image as Cloud Run service
+  - Cloud Run Service: `frontend-staging-service`
+- Frontend access to Rest API and Firestore Database
+
 ### Solution
-"https://netflix-dataset-service-tfiuoukcxa-uc.a.run.app"
+
 ```bash
+# edit the REST_API_SERVICE URL
 $ cd ~/pet-theory/lab06/firebase-frontend/public
-$ nano app.js # comment line 3 and uncomment line 4, insert your netflix-dataset-service url
+$ nano app.js
+
+# navigate to target folder and install dependencies
 $ cd ~/pet-theory/lab06/firebase-frontend
 $ npm install
+
+# build and deploy the code to Google Container Registry (gcr)
 $ gcloud builds submit --tag="gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1"
+
+# deploy the image as a Cloud Run Service
 $ gcloud run deploy frontend-staging-service \
     --region="us-central1" \
     --image="gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-staging:0.1"
@@ -195,13 +269,40 @@ $ gcloud run deploy frontend-staging-service \
 
 ### Description
 
+In this scenario, update the Staging Frontend to use the Firestore database. A high level architecture diagram below summarizes the general architecture.
+
+<div align="center">
+  <img src="https://i.imgur.com/ePEfSXn.png" alt="General Architecture">
+</div>
+
+To complete this section successfully, you are required to implement the following tasks:
+
+- Access `pet-theory/lab06/firebase-frontend/public`
+- Update the frontend application i.e. `app.js` to use the REST API
+- Don't forget to append the year to the `SERVICE_URL`
+- Use Cloud Build to tag and deploy image revision to Container Registry
+  - Container Registry Image:	`frontend-production:0.1`
+- Deploy the new image as Cloud Run service
+  - Cloud Run Service: `frontend-production-service`
+- Frontend access to Rest API and Firestore Database
+
 ### Solution
 
 ```bash
+# navigate to target folder and install dependencies
+$ cd ~/pet-theory/lab06/firebase-frontend
+$ npm install
+
+# build and deploy the code to Google Container Registry (gcr)
 $ gcloud builds submit --tag="gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1"
+
+# deploy the image as a Cloud Run Service
 $ gcloud run deploy frontend-production-service \
     --region="us-central1" \
     --image="gcr.io/$GOOGLE_CLOUD_PROJECT/frontend-production:0.1"
 ```
 
 ## References
+
+- [`gcloud builds submit` | Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/builds/submit)
+- [`gcloud run deploy` | Cloud SDK Documentation](https://cloud.google.com/sdk/gcloud/reference/run/deploy)
