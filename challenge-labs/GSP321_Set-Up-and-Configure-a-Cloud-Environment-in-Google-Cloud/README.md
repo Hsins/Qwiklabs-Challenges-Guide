@@ -1,7 +1,7 @@
 # GSP321 —— Set Up and Configure a Cloud Environment in Google Cloud
 
 <div align="center">
-  <img src="https://i.imgur.com/F3iwIvo.png" alt="GSP313 —— Create and Manage Cloud Resources">
+  <img src="https://i.imgur.com/1ICqjRE.png" alt="GSP313 —— Create and Manage Cloud Resources">
 </div>
 
 <details>
@@ -71,10 +71,10 @@
 | Level | Code | Name | Note |
 | :--: | :--: | :-- | :--: |
 | Introductory | `GSP064` | [Cloud IAM: Qwik Start](https://google.qwiklabs.com/focuses/551?parent=catalog) | [EN](../../normal-labs/GSP064_Cloud-IAM-Qwik-Start/) |
-| Introductory | `GSP281` | [Introduction to SQL for BigQuery and Cloud SQL](https://google.qwiklabs.com/focuses/2802?parent=catalog) | [EN](./normal-labs/GSP281_Introduction-to-SQL-for-BigQuery-and-Cloud-SQL/) |
-| Advanced | `GSP211` | [Multiple VPC Networks](https://google.qwiklabs.com/focuses/1230?parent=catalog) |  |
+| Introductory | `GSP281` | [Introduction to SQL for BigQuery and Cloud SQL](https://google.qwiklabs.com/focuses/2802?parent=catalog) | [EN](../../normal-labs/GSP281_Introduction-to-SQL-for-BigQuery-and-Cloud-SQL/) |
+| Advanced | `GSP211` | [Multiple VPC Networks](https://google.qwiklabs.com/focuses/1230?parent=catalog) | [EN](../../normal-labs/GSP211_Multiple-VPC-Networks/) |
 | Introductory | `GSP089` | [Cloud Monitoring: Qwik Start](https://google.qwiklabs.com/focuses/10599?parent=catalog) | [EN](../../normal-labs/GSP089_Cloud-Monitoring-Qwik-Start/) |
-| Advanced | `GSP053` | [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) |  |
+| Advanced | `GSP053` | [Managing Deployments Using Kubernetes Engine](https://google.qwiklabs.com/focuses/639?parent=catalog) | [EN](../../normal-labs/GSP053_Managing-Deployments-Using-Kubernetes-Engine/) |
 | Expert | `GSP321` | [Set Up and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://google.qwiklabs.com/focuses/10603?parent=catalog) |  |
 
 </details>

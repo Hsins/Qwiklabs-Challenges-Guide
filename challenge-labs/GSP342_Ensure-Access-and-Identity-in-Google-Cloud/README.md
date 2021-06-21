@@ -265,7 +265,7 @@ $ gcloud container clusters create orca-test-cluster \
 You have a simple test application that can be deployed to any cluster to quickly test that basic container deployment functionality is working and that basic services can be created and accessed. You must configure the environment so that you can deploy this simple demo to the new cluster using the jumphost `orca-jumphost`.
 
 ```bash
-$ kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
+$ kubectl create deployment hello-server --image="gcr.io/google-samples/hello-app:1.0"
 ```
 
 This deploys an application that listens on port `8080` that can be exposed using a basic load balancer service for testing.
@@ -295,8 +295,8 @@ $ kubectl create deployment hello-server \
 
 # [Optional] create a Kubernetes Service exposing application to external traffic
 $ kubectl expose deployment hello-server \
-    --name orca-hello-service \
-    --type LoadBalancer \
+    --name="orca-hello-service" \
+    --type="LoadBalancer" \
     --port 80 --target-port 8080
 ```
 
